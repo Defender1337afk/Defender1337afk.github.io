@@ -1272,3 +1272,182 @@ h2 {
     opacity: 1;
   }
 }
+
+.bar__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--on-surface-variant);
+  transition: background-color 0.2s, color 0.2s, border-radius 0.5s var(--spring);
+}
+
+.bar__icon:hover {
+  background: var(--surface-high);
+  color: var(--primary);
+  border-radius: 14px;
+}
+
+.versus {
+  margin-top: var(--gap);
+}
+
+.versus__head p {
+  margin-top: 18px;
+  max-width: 34em;
+  font-size: 1.12rem;
+  color: var(--on-surface-variant);
+}
+
+.versus__frame {
+  margin-top: 32px;
+}
+
+.versus__view {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  aspect-ratio: 1400 / 880;
+  background: #0c110e;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.versus__img,
+.versus__img img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.versus__img img {
+  object-fit: cover;
+}
+
+.versus__img--top {
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+
+.versus__tag {
+  position: absolute;
+  top: 16px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgb(10 12 10 / 0.72);
+  backdrop-filter: blur(10px);
+  color: #f2efe6;
+  font-size: 14px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.versus__tag--left {
+  left: 16px;
+}
+
+.versus__tag--right {
+  right: 16px;
+}
+
+.versus__handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 3px;
+  margin-left: -1.5px;
+  background: var(--primary);
+  box-shadow: 0 0 24px rgb(0 0 0 / 0.5);
+  pointer-events: none;
+}
+
+.versus__handle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  translate: -50% -50%;
+  clip-path: var(--cookie);
+  background: var(--primary);
+  color: var(--on-primary);
+  transition: scale 0.4s var(--spring), rotate 0.6s var(--spring);
+}
+
+.versus__view:hover .versus__handle i,
+.versus__view.is-drag .versus__handle i {
+  scale: 1.12;
+  rotate: 45deg;
+}
+
+.versus__handle i svg {
+  rotate: 0deg;
+}
+
+.versus__view:hover .versus__handle i svg,
+.versus__view.is-drag .versus__handle i svg {
+  rotate: -45deg;
+}
+
+.versus__range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+
+.download__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.download__links .btn svg,
+.bar__icon svg {
+  flex: none;
+}
+
+.foot a {
+  color: var(--primary);
+}
+
+@media (max-width: 719px) {
+  .bar__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .versus__tag {
+    top: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .versus__tag--left {
+    left: 10px;
+  }
+
+  .versus__tag--right {
+    right: 10px;
+  }
+
+  .versus__handle i {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 439px) {
+  .brand span {
+    display: none;
+  }
+}

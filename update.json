@@ -1,1 +1,28 @@
-{"version":"1.2.2","codename":"Cursed","notes":"","url":"https://defender1337afk.github.io/#download"}
+{
+  "version": "1.2.4",
+  "codename": "Cursed",
+  "notes": "Автообновление с прогрессом, новый интерфейс New, исправления",
+  "url": "https://defender1337afk.github.io/#download",
+  "files": {
+    "win-setup": {
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-Setup-1.2.4.exe",
+      "sha256": "e395b797b18881b749779b3502d74a3fd492aba43822db5ca365f3281a58080f",
+      "size": 182552069
+    },
+    "win-portable": {
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-1.2.4-portable.exe",
+      "sha256": "2676e7d6b99f6fb79771ddc090a38ec9f76bef43d0418c278ed9f0cb34a45f3d",
+      "size": 127721003
+    },
+    "linux-appimage": {
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-1.2.4-x86_64.AppImage",
+      "sha256": "01cda73d607768b502403df1e758a5b422d6bde01c772c574a606ff6331bfb87",
+      "size": 146131639
+    },
+    "linux-tar": {
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-1.2.4-x64.tar.gz",
+      "sha256": "a0efa3ce3fe4b5091c7b482bc5d22d15f20799fe5f58887f0fed1faf060b56cb",
+      "size": 140291043
+    }
+  }
+}

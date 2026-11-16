@@ -161,3 +161,41 @@
     start();
   }
 })();
+
+const initCompare = () => {
+  for (const frame of document.querySelectorAll('[data-compare]')) {
+    const view = frame.querySelector('.versus__view')
+    const range = frame.querySelector('.versus__range')
+    if (!view || !range) continue
+    const set = (v) => {
+      view.style.setProperty('--pos', `${v}%`)
+    }
+    range.addEventListener('input', () => set(range.value))
+    range.addEventListener('pointerdown', () => view.classList.add('is-drag'))
+    window.addEventListener('pointerup', () => view.classList.remove('is-drag'))
+    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (calm || !('IntersectionObserver' in window)) continue
+    let touched = false
+    range.addEventListener('pointerdown', () => {
+      touched = true
+    })
+    const hint = new IntersectionObserver((entries) => {
+      if (!entries.some((e) => e.isIntersecting)) return
+      hint.disconnect()
+      const start = performance.now()
+      const step = (now) => {
+        if (touched) return
+        const t = Math.min(1, (now - start) / 1800)
+        const v = 50 + Math.sin(t * Math.PI * 2) * 18 * (1 - t)
+        set(v)
+        range.value = String(v)
+        if (t < 1) requestAnimationFrame(step)
+      }
+      setTimeout(() => requestAnimationFrame(step), 400)
+    }, { threshold: 0.5 })
+    hint.observe(frame)
+  }
+}
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initCompare)
+else initCompare()

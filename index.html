@@ -40,6 +40,7 @@
     <span>Hesperian</span>
   </a>
   <nav class="bar__nav" aria-label="Разделы">
+    <a href="#ui">Интерфейс</a>
     <a href="#launcher">Лаунчер</a>
     <a href="#servers">Серверы</a>
     <a href="#skins">Скины</a>
@@ -56,6 +57,7 @@
       <button type="button" class="swatch" role="radio" aria-checked="false" data-set="coral" aria-label="Коралловый" title="Коралловый"></button>
     </div>
   </div>
+  <a class="bar__icon" href="https://t.me/upskyapps" target="_blank" rel="noopener" aria-label="Telegram-канал" title="Telegram-канал"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1 .4-1 1.8 0 2.1l4.6 1.5 1.8 5.6c.3.8 1.3 1 1.9.4l2.6-2.5 4.7 3.5c.7.5 1.7.1 1.9-.7l3-15.4c.2-1.1-.9-2-1.9-1.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="m7.6 14.3 9.7-6.6-7.3 7.9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   <a class="btn btn--tonal btn--small" href="#download">Скачать</a>
 </header>
 
@@ -66,7 +68,7 @@
   <div class="hero__row">
     <p class="hero__lead">Лаунчер Minecraft для Windows и&nbsp;Linux. Сборки, моды, серверы и&nbsp;скины в&nbsp;одном окне.</p>
     <div class="hero__cta">
-      <a class="btn btn--filled btn--large" href="#download">Скачать 1.2.2<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn--filled btn--large" href="#download">Скачать 1.2.4<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <span class="hero__meta">Бесплатно, GPL-3.0</span>
     </div>
   </div>
@@ -79,6 +81,29 @@
     </figure>
     <div class="badge" aria-hidden="true"><span><b>1.2</b>Cursed</span></div>
   </div>
+</section>
+
+<section class="versus" id="ui">
+  <div class="versus__head" data-reveal>
+    <h2>Legacy или&nbsp;New</h2>
+    <p>Два интерфейса в&nbsp;одном лаунчере. Legacy плотный, как IDE. New с&nbsp;большой карточкой сборки, которая следит за&nbsp;курсором. Переключается в&nbsp;настройках.</p>
+  </div>
+  <figure class="surface versus__frame" data-reveal data-compare>
+    <div class="versus__view" style="--pos:50%">
+      <picture class="versus__img">
+        <source srcset="assets/img/ui-new.webp" type="image/webp">
+        <img src="assets/img/ui-new.png" width="1400" height="880" loading="lazy" alt="Интерфейс New: большая надпись Hesperian, карточка последней сборки с модами, кнопки «Играть» и «Настройки сборки»">
+      </picture>
+      <picture class="versus__img versus__img--top">
+        <source srcset="assets/img/ui-legacy.webp" type="image/webp">
+        <img src="assets/img/ui-legacy.png" width="1400" height="880" loading="lazy" alt="Интерфейс Legacy: дерево сборок слева, вкладка «Начало» с недавними сборками и горячими клавишами">
+      </picture>
+      <span class="versus__tag versus__tag--left">Legacy</span>
+      <span class="versus__tag versus__tag--right">New</span>
+      <span class="versus__handle" aria-hidden="true"><i><svg viewBox="0 0 24 24" width="22" height="22"><path d="m9 7-5 5 5 5m6-10 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i></span>
+      <input class="versus__range" type="range" min="0" max="100" value="50" step="0.1" aria-label="Сравнить Legacy и New">
+    </div>
+  </figure>
 </section>
 
 <section class="block" id="launcher">
@@ -194,45 +219,49 @@
   <h2 data-reveal>Скачать</h2>
   <ul class="files" data-reveal>
     <li>
-      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.2/Hesperian-Setup-1.2.2.exe" data-file="Hesperian-Setup-1.2.2.exe">
+      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-Setup-1.2.4.exe" data-file="Hesperian-Setup-1.2.4.exe">
         <span class="files__os">Windows</span>
         <span class="files__name">Установщик</span>
-        <span class="files__file">Hesperian-Setup-1.2.2.exe</span>
+        <span class="files__file">Hesperian-Setup-1.2.4.exe</span>
         <span class="files__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </li>
     <li>
-      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.2/Hesperian-1.2.2-portable.exe" data-file="Hesperian-1.2.2-portable.exe">
+      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-1.2.4-portable.exe" data-file="Hesperian-1.2.4-portable.exe">
         <span class="files__os">Windows</span>
         <span class="files__name">Портативный</span>
-        <span class="files__file">Hesperian-1.2.2-portable.exe</span>
+        <span class="files__file">Hesperian-1.2.4-portable.exe</span>
         <span class="files__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </li>
     <li>
-      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.2/Hesperian-1.2.2-x86_64.AppImage" data-file="Hesperian-1.2.2-x86_64.AppImage">
+      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-1.2.4-x86_64.AppImage" data-file="Hesperian-1.2.4-x86_64.AppImage">
         <span class="files__os">Linux</span>
         <span class="files__name">AppImage</span>
-        <span class="files__file">Hesperian-1.2.2-x86_64.AppImage</span>
+        <span class="files__file">Hesperian-1.2.4-x86_64.AppImage</span>
         <span class="files__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </li>
     <li>
-      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.2/Hesperian-1.2.2-x64.tar.gz" data-file="Hesperian-1.2.2-x64.tar.gz">
+      <a href="https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.2.4/Hesperian-1.2.4-x64.tar.gz" data-file="Hesperian-1.2.4-x64.tar.gz">
         <span class="files__os">Linux</span>
         <span class="files__name">tar.gz</span>
-        <span class="files__file">Hesperian-1.2.2-x64.tar.gz</span>
+        <span class="files__file">Hesperian-1.2.4-x64.tar.gz</span>
         <span class="files__go" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
     </li>
   </ul>
-  <p class="download__reqs" data-reveal>Windows 10/11 x64 или Linux x64, от&nbsp;4&nbsp;ГБ ОЗУ</p>
+  <p class="download__reqs" data-reveal>Windows 10/11 x64 или Linux x64, от&nbsp;4&nbsp;ГБ ОЗУ. Дальше лаунчер обновляется сам.</p>
+  <div class="download__links" data-reveal>
+    <a class="btn btn--tonal btn--small" href="https://t.me/upskyapps" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1 .4-1 1.8 0 2.1l4.6 1.5 1.8 5.6c.3.8 1.3 1 1.9.4l2.6-2.5 4.7 3.5c.7.5 1.7.1 1.9-.7l3-15.4c.2-1.1-.9-2-1.9-1.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="m7.6 14.3 9.7-6.6-7.3 7.9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Telegram-канал</a>
+    <a class="btn btn--tonal btn--small" href="https://github.com/Defender1337afk/Hesperian" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m8.5 7-5 5 5 5m7-10 5 5-5 5M13.5 4.5l-3 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Посмотреть исходники</a>
+  </div>
 </section>
 
 </main>
 
 <footer class="foot">
-  <p>Hesperian 1.2 Cursed. Автор Defender1337afk. Лицензия GPL-3.0.</p>
+  <p>Hesperian 1.2.4 Cursed. Автор Defender1337afk. Лицензия GPL-3.0. <a href="https://github.com/Defender1337afk/Hesperian" target="_blank" rel="noopener">Исходники</a> · <a href="https://t.me/upskyapps" target="_blank" rel="noopener">Telegram</a></p>
   <p class="foot__fine">Hesperian не&nbsp;связан с&nbsp;Mojang и&nbsp;Microsoft.</p>
 </footer>
 
