@@ -1293,11 +1293,6 @@ h2 {
   margin-top: var(--gap);
 }
 
-.versus__head {
-  max-width: 720px;
-  margin-inline: auto;
-}
-
 .versus__head p {
   margin-top: 18px;
   max-width: 34em;
@@ -1306,9 +1301,13 @@ h2 {
 }
 
 .versus__frame {
-  max-width: 720px;
-  margin-top: 28px;
-  margin-inline: auto;
+  margin-top: 32px;
+}
+
+@media (min-width: 1040px) {
+  .versus__view {
+    border-radius: 34px;
+  }
 }
 
 .versus__view {
