@@ -1451,3 +1451,32 @@ h2 {
     display: none;
   }
 }
+
+.support {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  margin-top: 14px;
+  padding: 0 14px 0 10px;
+  border-radius: 999px;
+  background: var(--surface-container);
+  color: var(--on-surface-variant);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s, border-radius 0.5s var(--spring), transform 0.5s var(--spring);
+}
+
+.support:hover {
+  background: var(--surface-high);
+  color: var(--on-surface);
+  border-radius: 12px;
+}
+
+.support:active {
+  transform: scale(0.96);
+}
+
+.support svg {
+  flex: none;
+}
