@@ -1,28 +1,28 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.4",
   "codename": "Aetherbloom",
-  "notes": "Hesperian 1.3 Aetherbloom: моды с CurseForge, статистика FPS и памяти, проверка конфликтов модов, разбор вылетов, фон из GIF и видео, перетаскивание файлов, светлая и чёрная темы, Astra 1.5",
+  "notes": "Hesperian 1.3.4: Astra Visuals больше не встроена в лаунчер, у неё свой Astra Loader. Уже установленная Astra в сборках продолжит работать.",
   "url": "https://defender1337afk.github.io/#download",
   "files": {
     "win-setup": {
-      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.0/Hesperian-Setup-1.3.0.exe",
-      "sha256": "f8bf6db0c6a9526a1a146115cc6e597dd823a2621773862e2b5ea70a75059b05",
-      "size": 182633334
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.4/Hesperian-Setup-1.3.4.exe",
+      "sha256": "2855c4d667e0c4a234ed86488fddb46c5e4572dd40df05a91214f2fa1d2ef48a",
+      "size": 166623519
     },
     "win-portable": {
-      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.0/Hesperian-1.3.0-portable.exe",
-      "sha256": "67583815942ca687de8548abf290eae88700291b97c3d5659e9cda967b4c27f1",
-      "size": 127797672
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.4/Hesperian-1.3.4-portable.exe",
+      "sha256": "f8f1c687a13977d010325cce456b8e5a671ebe545692a5f1226fad186f150f17",
+      "size": 111794659
     },
     "linux-appimage": {
-      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.0/Hesperian-1.3.0-x86_64.AppImage",
-      "sha256": "9fa0fefe64ac2d1ab4c85ed54d2816b48908e59420ccbaacb0acb626b7a6f434",
-      "size": 146213763
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.4/Hesperian-1.3.4-x86_64.AppImage",
+      "sha256": "80fae0c19a2be3558a194e2f2dab4dd27ca55dea8b58444e4bbe5757df28c04b",
+      "size": 130193726
     },
     "linux-tar": {
-      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.0/Hesperian-1.3.0-x64.tar.gz",
-      "sha256": "2e8920d8552c144a1b2ce13663f3aa72afbf22c8b7500b71c4b187af05c87a7a",
-      "size": 140370217
+      "url": "https://github.com/Defender1337afk/Defender1337afk.github.io/releases/download/v1.3.4/Hesperian-1.3.4-x64.tar.gz",
+      "sha256": "cc43c5d7e6ab2e8b43a1521c27ac2408fbc427dd28492723b6e633a92831ccc4",
+      "size": 124366491
     }
   }
 }
